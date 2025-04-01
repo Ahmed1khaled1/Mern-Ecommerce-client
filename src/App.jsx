@@ -7,7 +7,7 @@ import Layout from "./components/admin-view/Layout";
 import Dashboard from "./pages/admin-view/Dashboard";
 import Orders from "./pages/admin-view/Orders";
 import Products from "./pages/admin-view/Products";
-import Features from "./pages/admin-view/features";
+import Features from "./pages/admin-view/Features";
 import ShoppingLayout from "./components/shopping-view/Layout";
 import Account from "./pages/shopping-view/Account";
 import Checkout from "./pages/shopping-view/Checkout";

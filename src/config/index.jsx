@@ -1,6 +1,6 @@
 import { LayoutDashboard, ShoppingBasket, Truck } from "lucide-react";
 
-export const API_URL = "http://localhost:5000/api";
+export const API_URL = "https://mern-ecommerce-api-seven.vercel.app/api";
 
 
 export const registerFormControls = [

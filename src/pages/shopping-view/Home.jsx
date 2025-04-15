@@ -5,9 +5,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import slide1 from "../../assets/banner-1.webp";
-import slide2 from "../../assets/banner-2.webp";
-import slide3 from "../../assets/banner-3.webp";
 import {
   Airplay,
   BabyIcon,

@@ -27,6 +27,7 @@ function ImageUploade({
     const droppedFile = event.dataTransfer.files?.[0];
     if (droppedFile) setImageFile(droppedFile);
   };
+  
   const uploadeImage = async () => {
 
     const data = new FormData();

@@ -4,7 +4,7 @@ import { API_URL } from "../config/index";
 
 const initialState = {
   isAuthentecated: false,
-  isLoading: true,
+  isLoading: false, // set to false by default
   user: null,
 };
 
@@ -55,7 +55,10 @@ const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    setUser: (state, action) => {},
+    setUser: (state, action) => {
+      state.user = action.payload;
+      state.isAuthentecated = !!action.payload;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -106,4 +109,8 @@ const authSlice = createSlice({
   },
 });
 
+// Reminder: In your main App component or store bootstrap, dispatch(checkAuth()) on load
+// to persist login state across refreshes if the backend sets the cookie correctly.
+
+export const { setUser } = authSlice.actions;
 export default authSlice.reducer;
